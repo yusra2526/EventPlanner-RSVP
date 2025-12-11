@@ -1,0 +1,284 @@
+.guest-list {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.guest-list h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 2px dashed #dee2e6;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.empty-state h3 {
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #adb5bd;
+  margin: 0;
+}
+
+.guest-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guest-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 10px;
+  border-left: 6px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.guest-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.guest-item.confirmed {
+  background-color: #f0fff4;
+  border-left-color: #48bb78;
+}
+
+.guest-item .guest-info {
+  flex: 1;
+}
+
+.guest-item .guest-info h3 {
+  margin: 0 0 8px 0;
+  color: #2d3748;
+  font-size: 18px;
+}
+
+.guest-item .guest-info p {
+  margin: 0 0 12px 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.status-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge.confirmed {
+  background-color: #48bb78;
+  color: white;
+}
+
+.badge.pending {
+  background-color: #ed8936;
+  color: white;
+}
+
+.badge.rsvp.yes {
+  background-color: #4299e1;
+  color: white;
+}
+
+.badge.rsvp.no {
+  background-color: #cbd5e0;
+  color: #4a5568;
+}
+
+.guest-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 250px;
+}
+
+.action-row {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+  flex: 1;
+  text-align: center;
+}
+
+.confirm-btn {
+  background-color: #ed8936;
+  color: white;
+}
+
+.confirm-btn.confirmed {
+  background-color: #48bb78;
+}
+
+.rsvp-btn.yes {
+  background-color: #4299e1;
+  color: white;
+}
+
+.rsvp-btn.no {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.edit-btn {
+  background-color: #d69e2e;
+  color: white;
+}
+
+.remove-btn {
+  background-color: #f56565;
+  color: white;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-input {
+  padding: 10px;
+  border: 2px solid #e2e8f0;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn {
+  background-color: #48bb78;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.cancel-btn {
+  background-color: #a0aec0;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.list-summary {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.list-summary strong {
+  color: #2d3748;
+}
+
+/* Update App.css with these additions */
+.demo-section {
+  background-color: #f7fafc;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 25px 0;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.demo-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.demo-note {
+  margin-top: 10px;
+  color: #718096;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #718096;
+  font-size: 14px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.App-header .subtitle {
+  color: #cbd5e0;
+  margin-top: 5px;
+  font-size: 16px;
+}
